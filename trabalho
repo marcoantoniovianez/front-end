@@ -1,0 +1,124 @@
+<html>
+
+<style>
+
+ html{
+            background-image:url("https://static.vecteezy.com/ti/vetor-gratis/p1/2289261-escola-educacao-padrao-padrao-educacao-simbolos-esboco-pano-de-fundo-com-material-escolar-de-volta-as-escola-icones-doodle-linha-arte-caderno-fundo-vetor.jpg");
+            min-height: 10%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+}
+            
+
+header{
+    display: flex;
+
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+</style>
+
+<header>
+
+<img src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2018%2F07%2F17%2F16%2FLogo-e-Cartao-de-Visita-244168_341712_163645724_73950951.jpg" class="logo">
+<button>inicio</button>
+<button>configuração</button>
+<button>perfil</button>
+<button>historico</button>
+
+
+</header>
+
+    <div class="produtos">
+       <p>produto 1</p>
+       <p>produto 2</p>
+       <p>produto 3</p>
+    </div>
+
+<footer>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisição GET para JSON</title>
+</head>
+<body>
+
+  <div id="container"></div>
+
+  <script>
+    // URL para a requisição GET
+    const url = 'https://api.npoint.io/3d61d1b84dda0fb1836b';
+
+    // Função para tratar a resposta da requisição
+    function handleResponse(response) {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    }
+
+    // Função para criar a lista de jogadores
+    function createPlayerList(data) {
+      const bebida = data.bebidas;
+      const container = document.getElementById('container');
+
+      bebida.forEach(bebida => {
+        const jogadorDiv = document.createElement('div');
+        jogadorDiv.classList.add('jogador');
+
+        const imagemJogador = document.createElement('img');
+        imagemJogador.src = bebida.imagem;
+        imagemJogador.alt = bebida.nome;
+
+        const nomeJogador = document.createElement('p');
+        nomeJogador.textContent = `Preço: ${bebida.preco}`;
+
+        jogadorDiv.appendChild(imagemJogador);
+        jogadorDiv.appendChild(nomeJogador);
+
+        container.appendChild(jogadorDiv);
+      });
+    }
+
+    // Realiza a requisição GET
+    fetch(url)
+      .then(handleResponse)
+      .then(createPlayerList)
+      .catch(error => console.error('Erro ao fazer a requisição:', error));
+  </script>
+
+  <style>
+    .jogador {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .jogador img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  </style>
+</body>
+</html>
+
+</footer>
+
+<center>
+<h3>sobre nós</h3>
+</br>
+<p>nós somos uma empresa de compartilhamento de conteudos</p>
+</center>
+
+</footer>
+
+</html>

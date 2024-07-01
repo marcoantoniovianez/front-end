@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft</title>
+    <style>
+        html{
+            background-image:url("https://tse1.mm.bing.net/th/id/OIG1.pQff_lPlFlwzhIni1I9V?pid=ImgGn");
+            min-height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .login-box {
+            width: 300px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .login-box h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .login-box input[type = "button"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .login-box input[type = "button"]:hover {
+            background: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>MINECRAFT</h1>
+        <input type="button" value="COM MINECRAFT">
+        <input type="button" value="ENTRAR MOJANG">
+        <p style="color:white;">minecraft tela de login.</p>
+    </div>
+</body>
+</html>
